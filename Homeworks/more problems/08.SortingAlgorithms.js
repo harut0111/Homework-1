@@ -40,25 +40,17 @@
 /*  SELECTION SORT 
     https://www.geeksforgeeks.org/selection-sort-algorithm-2/
 */
-// const findMin = (arr) => {
-//   let min = +Infinity;
-//   for (const el of arr) {
-//     if (el < min) {
-//       min = el;
-//     }
-//   }
-//   return min;
-// };
-
 // const selectSort = (arr) => {
-//   const sortedArr = [];
-//   while (arr.length) {
-//     // const currentMin = Math.min(...arr);
-//     const currentMin = findMin(arr);
-//     sortedArr.push(currentMin);
-//     arr.splice(arr.indexOf(currentMin), 1);
+//   const l = arr.length;
+//   for (let i = 0; i < l - 1; i++) {
+//     let minIndex = i;
+
+//     for (j = i + 1; j < l; j++) {
+//       if (arr[j] < arr[minIndex]) minIndex = j;
+//     }
+//     [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
 //   }
-//   return sortedArr;
+//   return arr;
 // };
 
 // /* Test */
